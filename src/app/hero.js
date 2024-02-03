@@ -22,17 +22,19 @@ export default function Hero() {
           </p>
           <div>
             <div className="flex gap-x-2 w-11/12">
-              <input
-                type="email"
-                name="email"
-                id="email"
-                className="flex-1 rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
-                placeholder="Enter your email"
-                aria-describedby="email-description"
-              />
-              <button type="submit" className={styles.notify}>
-                Notify me
-              </button>
+              <form name="contact" netlify>
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  className="flex-1 rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                  placeholder="Enter your email"
+                  aria-describedby="email-description"
+                />
+                <button type="submit" className={styles.notify}>
+                  Notify me
+                </button>
+              </form>
             </div>
 
             <p className="mt-2 text-sm text-gray-500" id="email-description">
@@ -181,14 +183,14 @@ export default function Hero() {
       </p>
 
       <div className="flex flex-col gap-6 lg:grid lg:grid-cols-3 lg:gap-14 mx-auto max-w-7xl px-6 pb-24 pt-10 sm:pb-32 lg:px-8 lg:py-24">
-        <div className="bg-gray-50 flex flex-col p-4 justify-center items-center mydiv">
+        <div className="bg-gray-50 flex flex-col p-4 justify-center items-center mydiv relative">
           <svg
             width="72"
             height="72"
             viewBox="0 0 72 72"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
-            className="relative lg:bottom-10"
+            className="absolute top-[-22px]"
           >
             <g filter="url(#filter0_dd_542_327)">
               <rect x="12" y="2" width="48" height="48" rx="6" fill="#111827" />
@@ -267,7 +269,7 @@ export default function Hero() {
             </defs>
           </svg>
 
-          <h4 className="text-[#111827] font-sans text-xl font-medium leading-7 py-4">
+          <h4 className="text-[#111827] font-sans text-xl font-medium leading-7 pt-10">
             Flexible Capacity
           </h4>
           <p className="text-gray-500 font-sans text-lg font-light leading-7 py-4">
@@ -275,14 +277,14 @@ export default function Hero() {
             capacity for each individual use case.
           </p>
         </div>
-        <div className="bg-gray-50 flex flex-col p-4 justify-center items-center mydiv">
+        <div className="bg-gray-50 flex flex-col p-4 justify-center items-center mydiv relative">
           <svg
             width="72"
             height="72"
             viewBox="0 0 72 72"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
-            className="relative lg:bottom-10"
+            className="absolute top-[-22px]"
           >
             <g filter="url(#filter0_dd_542_337)">
               <rect x="12" y="2" width="48" height="48" rx="6" fill="#111827" />
@@ -361,7 +363,7 @@ export default function Hero() {
             </defs>
           </svg>
 
-          <h4 className="text-[#111827] font-sans text-xl font-medium leading-7 py-4">
+          <h4 className="text-[#111827] font-sans text-xl font-medium leading-7 pt-10">
             Security
           </h4>
           <p className="text-gray-500 font-sans text-lg font-light leading-7 py-4">
@@ -369,14 +371,14 @@ export default function Hero() {
             the right user is getting their medication.
           </p>
         </div>
-        <div className="bg-gray-50 flex flex-col p-4 justify-center items-center mydiv">
+        <div className="bg-gray-50 flex flex-col p-4 justify-center items-center mydiv relative">
           <svg
             width="72"
             height="72"
             viewBox="0 0 72 72"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
-            className="relative lg:bottom-10"
+            className="absolute top-[-22px]"
           >
             <g filter="url(#filter0_dd_542_377)">
               <rect x="12" y="2" width="48" height="48" rx="6" fill="#111827" />
@@ -455,7 +457,7 @@ export default function Hero() {
             </defs>
           </svg>
 
-          <h4 className="text-[#111827] font-sans text-xl font-medium leading-7 py-4">
+          <h4 className="text-[#111827] font-sans text-xl font-medium leading-7 pt-10">
             Multiple Users
           </h4>
           <p className="text-gray-500 font-sans text-lg font-light leading-7 py-4">
@@ -463,14 +465,14 @@ export default function Hero() {
             partitions of the device for multiple users.
           </p>
         </div>
-        <div className="bg-gray-50 flex flex-col p-4 justify-center items-center mydiv">
+        <div className="bg-gray-50 flex flex-col p-4 justify-center items-center mydiv relative">
           <svg
             width="72"
             height="72"
             viewBox="0 0 72 72"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
-            className="relative lg:bottom-10"
+            className="absolute top-[-22px]"
           >
             <g filter="url(#filter0_dd_542_285)">
               <rect x="12" y="2" width="48" height="48" rx="6" fill="#111827" />
@@ -549,7 +551,7 @@ export default function Hero() {
             </defs>
           </svg>
 
-          <h4 className="text-[#111827] font-sans text-xl font-medium leading-7 py-4">
+          <h4 className="text-[#111827] font-sans text-xl font-medium leading-7 pt-10">
             Smart Home Enabled
           </h4>
           <p className="text-gray-500 font-sans text-lg font-light leading-7 py-4">
@@ -557,14 +559,14 @@ export default function Hero() {
             receive ambient notifications, anywhere in your home.
           </p>
         </div>
-        <div className="bg-gray-50 flex flex-col p-4 justify-center items-center mydiv">
+        <div className="bg-gray-50 flex flex-col p-4 justify-center items-center mydiv relative">
           <svg
             width="72"
             height="72"
             viewBox="0 0 72 72"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
-            className="relative lg:bottom-10"
+            className="absolute top-[-22px]"
           >
             <g filter="url(#filter0_dd_542_346)">
               <rect x="12" y="2" width="48" height="48" rx="6" fill="#111827" />
@@ -643,7 +645,7 @@ export default function Hero() {
             </defs>
           </svg>
 
-          <h4 className="text-[#111827] font-sans text-xl font-medium leading-7 py-4">
+          <h4 className="text-[#111827] font-sans text-xl font-medium leading-7 pt-10">
             Sustainable
           </h4>
           <p className="text-gray-500 font-sans text-lg font-light leading-7 py-4">
@@ -651,14 +653,14 @@ export default function Hero() {
             reducing the amount of single-use plastic in health journeys.
           </p>
         </div>
-        <div className="bg-gray-50 flex flex-col p-4 justify-center items-center mydiv">
+        <div className="bg-gray-50 flex flex-col p-4 justify-center items-center mydiv relative">
           <svg
             width="72"
             height="72"
             viewBox="0 0 72 72"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
-            className="relative lg:bottom-10"
+            className="absolute top-[-22px]"
           >
             <g filter="url(#filter0_dd_542_317)">
               <rect x="12" y="2" width="48" height="48" rx="6" fill="#111827" />
@@ -737,7 +739,7 @@ export default function Hero() {
             </defs>
           </svg>
 
-          <h4 className="text-[#111827] font-sans text-xl font-medium leading-7 py-4">
+          <h4 className="text-[#111827] font-sans text-xl font-medium leading-7 pt-10">
             Affordable
           </h4>
           <p className="text-gray-500 font-sans text-lg font-light leading-7 py-4">
@@ -751,7 +753,7 @@ export default function Hero() {
         Supported by
       </h3>
 
-      <div className="flex flex-row gap-32 justify-center">
+      <div className="flex flex-row gap-32 justify-center flex-wrap lg:flex-nowrap">
         <img src="/PIA 1.png" className="object-contain"></img>
         <img
           src="/South-Bank-Innovation-logo 1.png"
@@ -770,17 +772,19 @@ export default function Hero() {
           with important updates and release information!
         </p>
         <div className="flex gap-x-2 w-1/3">
-          <input
-            type="email"
-            name="email"
-            id="email"
-            className="flex-1 rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
-            placeholder="Enter your email"
-            aria-describedby="email-description"
-          />
-          <button type="submit" className={styles.notifybtm}>
-            Notify me
-          </button>
+          <form name="contact" netlify>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              className="flex-1 rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+              placeholder="Enter your email"
+              aria-describedby="email-description"
+            />
+            <button type="submit" className={styles.notifybtm}>
+              Notify me
+            </button>
+          </form>
         </div>
       </div>
 
