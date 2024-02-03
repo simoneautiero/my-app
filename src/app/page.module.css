@@ -12,6 +12,20 @@
   padding: 9px 17px;
 }
 
+.notifybtm {
+  border-radius: 6px;
+  background: black;
+  /* shadow/sm */
+  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.05);
+  color: var(--white, #fff);
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px; /* 150% */
+  padding: 9px 17px;
+}
+
 .navBar {
   display: flex;
   flex-direction: row;
