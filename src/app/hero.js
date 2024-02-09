@@ -22,7 +22,7 @@ export default function Hero() {
           </p>
           <div>
             <div className="flex gap-x-2 w-11/12">
-              <form name="contact" netlify>
+              <form name="contact" method="POST" netlify>
                 <input
                   type="email"
                   name="email"
@@ -772,7 +772,7 @@ export default function Hero() {
           with important updates and release information!
         </p>
         <div className="flex gap-x-2 w-1/3">
-          <form name="contact" netlify>
+          <form name="contact" method="POST" netlify>
             <input
               type="email"
               name="email"
