@@ -778,7 +778,7 @@ export default function Hero() {
           data-netlify="true"
           className="flex gap-x-2 w-2/5"
         >
-          <input type="hidden" name="form-name" value="contact" />
+          <input type="hidden" name="contact" value="contact" />
 
           <input
             type="email"
