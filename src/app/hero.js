@@ -775,6 +775,7 @@ export default function Hero() {
         <form
           name="contact"
           method="POST"
+          action="/"
           netlify
           className="flex gap-x-2 w-2/5"
         >
