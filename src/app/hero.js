@@ -775,21 +775,20 @@ export default function Hero() {
         <form
           name="contact"
           method="POST"
-          action=""
           netlify
           className="flex gap-x-2 w-2/5"
         >
-          <label>
-            email
-            <input
-              type="email"
-              name="email"
-              id="email"
-              className="flex-1 rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
-              placeholder="Enter your email"
-              aria-describedby="email-description"
-            />
-          </label>
+          <input type="hidden" name="form-name" value="contact" />
+
+          <input
+            type="email"
+            name="email"
+            id="email"
+            className="flex-1 rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+            placeholder="Enter your email"
+            aria-describedby="email-description"
+          />
+
           <button type="submit" className={styles.notifybtm}>
             Notify me
           </button>
