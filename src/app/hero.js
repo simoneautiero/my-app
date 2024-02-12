@@ -21,7 +21,13 @@ export default function Hero() {
             Sign up to get updates on Rita.
           </p>
           <div>
-            <form className="flex gap-x-2 w-11/12">
+            <form
+              name="contact"
+              method="POST"
+              data-netlify="true"
+              className="flex gap-x-2 w-11/12"
+            >
+              <input type="hidden" name="contact" value="contact" />
               <input
                 type="email"
                 name="email"
@@ -748,23 +754,24 @@ export default function Hero() {
           </p>
         </div>
       </div>
+      <div className="py-8">
+        <h3 className="text-[#111827] mx-auto text-center font-poppins text-4xl font-lg leading-loose tracking-tighter">
+          Supported by
+        </h3>
 
-      <h3 className="text-[#111827] mx-auto text-center font-poppins text-4xl font-lg leading-loose tracking-tighter py-6">
-        Supported by
-      </h3>
-
-      <div className="flex flex-row gap-32 justify-center flex-wrap lg:flex-nowrap">
-        <img src="/PIA 1.png" className="object-contain"></img>
-        <img
-          src="/South-Bank-Innovation-logo 1.png"
-          className="object-contain"
-        ></img>
-        <img src="/LSBU2020logo-2 1.png" className="object-contain"></img>
-        <img src="/Asset+1@4x-8 1.png" className="object-cover w-[90px]"></img>
+        <div className="flex flex-row gap-32 justify-center flex-wrap lg:flex-nowrap pb-6">
+          <img src="/PIA 1.png" className="object-contain"></img>
+          <img
+            src="/South-Bank-Innovation-logo 1.png"
+            className="object-contain"
+          ></img>
+          <img src="/LSBU2020logo-2 1.png" className="object-contain"></img>
+          <img src="/Asset+1@4x-8 1.png" className="object-contain"></img>
+        </div>
       </div>
 
-      <div className="flex div-color gap-4 mx-auto max-w-7xl sm:p-14 lg:px-8 lg:my-24 items-center flex-col relative btmnewsletter rounded-xl lg:w-[66em]">
-        <h3 className="text-white font-poppins text-4xl font-base leading-normal tracking-tighter">
+      <div className="flex div-color gap-4 mx-auto max-w-7xl p-14 lg:px-8 lg:my-24 items-center flex-col relative btmnewsletter rounded-xl lg:w-[66em] mb-24">
+        <h3 className="text-white font-poppins text-4xl font-base leading-normal tracking-tighter text-center ">
           Get notified when we’re launching
         </h3>
         <p className="text-white font-sans text-lg font-light leading-7 py-4 lg:w-[32em] text-center">
@@ -776,7 +783,7 @@ export default function Hero() {
           name="contact"
           method="POST"
           data-netlify="true"
-          className="flex gap-x-2 w-2/5"
+          className="flex sm:flex-column gap-x-2 lg:w-2/5 w-full"
         >
           <input type="hidden" name="contact" value="contact" />
 
