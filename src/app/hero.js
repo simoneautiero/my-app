@@ -4,13 +4,13 @@ import styles from "./page.module.css";
 export default function Hero() {
   return (
     <div className="relative isolate overfnpm i @heroicons/reactlow-hidden bg-white">
-      <div className="mx-auto max-w-7xl px-6 pb-24 pt-10 sm:pb-32 lg:flex lg:px-8 lg:py-10">
-        <div className="mx-auto max-w-2xl lg:mx-0 lg:max-w-xl lg:flex-shrink-0 lg:pt-8">
+      <div className="items-center mx-auto max-w-7xl px-6 pb-24 pt-10 sm:pb-32 lg:flex lg:px-8 lg:py-10">
+        <div className="mx-auto max-w-2xl lg:mx-0 lg:max-w-xl lg:flex-shrink-0">
           <h1 className="text-[#111827] font-poppins text-custom font-medium leading-[75px] tracking-tighter">
             The <span className="gentlenudge">gentle nudge</span>
             <br /> you may need.
           </h1>
-          <p className="text-gray-500 font-sans text-lg font-light leading-7 py-4">
+          <p className="text-gray-500 font-sans text-lg font-light leading-7 py-4 lg:w-[26em]">
             Revolutionise medication{" "}
             <span className="font-medium">routines</span> with Rita - stay
             organised, on time, and in control of{" "}
@@ -21,25 +21,25 @@ export default function Hero() {
             Sign up to get updates on Rita.
           </p>
           <div>
-            <div className="flex gap-x-2 w-11/12">
-              <form name="contact" method="POST" netlify>
-                <input
-                  type="email"
-                  name="email"
-                  id="email"
-                  className="flex-1 rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
-                  placeholder="Enter your email"
-                  aria-describedby="email-description"
-                />
-                <button type="submit" className={styles.notify}>
-                  Notify me
-                </button>
-              </form>
-            </div>
+            <form className="flex gap-x-2 w-11/12">
+              <input
+                type="email"
+                name="email"
+                id="email"
+                className="flex-1 rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                placeholder="Enter your email"
+                aria-describedby="email-description"
+              />
+              <button type="submit" className={styles.notify}>
+                Notify me
+              </button>
+            </form>
 
             <p className="mt-2 text-sm text-gray-500" id="email-description">
-              We care about the protection of your data. Read our Privacy
-              Policy.
+              We care about the protection of your data. Read our{" "}
+              <a className="mt-2 text-sm text-gray-900" href="/">
+                Privacy Policy.
+              </a>
             </p>
           </div>
         </div>
@@ -56,14 +56,14 @@ export default function Hero() {
         seamlessly integrate into your or a loved ones daily routine.
       </p>
 
-      <div className="block lg:flex lg:flex-row lg:gap-14 mx-auto max-w-7xl px-6 pb-24 pt-10 sm:pb-32 lg:px-8 lg:py-24">
+      <div className="block lg:flex lg:flex-row lg:gap-14 mx-auto max-w-7xl px-6 py-24 sm:pb-32 lg:px-8">
         <div className="flex-1 grid content-center">
-          <h3 className="text-[#111827] font-poppins text-4xl font-base leading-normal tracking-tighter">
+          <h3 className="text-[#111827] font-poppins text-3xl font-base leading-tight tracking-tighter">
             <img src="./track.svg" className="py-6"></img>
             <span className="gentlenudge">Track</span> yours or your family’s
             consumption at home or on the go.
           </h3>
-          <p className="text-gray-500 font-sans text-lg font-light leading-7 py-4">
+          <p className="text-gray-500 font-sans text-lg font-light leading-7 py-4 lg:w-[30em]">
             Keeping track of the{" "}
             <span className="font-normal italic">“when did I have that”</span>{" "}
             or <span className="font-normal italic">“who’s had what”</span> can
@@ -86,31 +86,31 @@ export default function Hero() {
             around”
           </p>
           <div className="flex gap-4 items-center">
-            <img src="/Avatar.png"></img>
+            <img src="/paullucas.png"></img>
             <p className="text-gray-700 font-sans text-base font-medium leading-7 py-4">
               Paul Lucas
             </p>
           </div>
         </div>
         <div className="flex-1">
-          <img src="/meetrita1.png"></img>
+          <img src="/Image1.png" className="rounded-[12px]"></img>
         </div>
       </div>
 
-      <div className="block lg:flex lg:flex-row-reverse lg:gap-14 mx-auto max-w-7xl px-6 pb-24 pt-10 sm:pb-32 lg:px-8 lg:py-24">
+      <div className="block lg:flex lg:flex-row-reverse lg:gap-14 mx-auto max-w-7xl px-6 pb-24 sm:pb-32 lg:px-8 ">
         <div className="flex-1 grid content-center">
           <img src="./halos.svg" className="py-6"></img>
-          <h3 className="text-[#111827] font-poppins text-4xl font-base leading-normal tracking-tighter">
+          <h3 className="text-[#111827] font-poppins text-3xl font-base leading-tight tracking-tighter">
             Refill at home or get<span className="gentlenudge"> Halos</span>{" "}
             delivered straight to your door.*
           </h3>
-          <p className="text-gray-500 font-sans text-lg font-light leading-7 py-4">
+          <p className="text-gray-500 font-sans text-lg font-light leading-7 py-4 lg:w-[30em]">
             Keeping track of the Save time on reoccurring medications and
             prescriptions with our ‘Halo’ refill cartridges. Have pre-packaged
             ‘Halos’ delivered straight to your door, then simply load the
             cartridge into Rita and you’re ready to go!
           </p>
-          <p className="text-gray-500 font-sans text-sm font-light leading-7 py-4">
+          <p className="text-gray-500 font-sans text-sm font-light leading-7 py-4 italic">
             *Halos coming soon, not available at launch.
           </p>
           <div className="relative">
@@ -125,25 +125,25 @@ export default function Hero() {
             “c”
           </p>
           <div className="flex gap-4 items-center">
-            <img src="/Avatar.png"></img>
+            <img src="/rosieluchford.png"></img>
             <p className="text-gray-700 font-sans text-base font-medium leading-7 py-4">
               Rosie Luchford
             </p>
           </div>
         </div>
         <div className="flex-1">
-          <img src="/Media.png"></img>
+          <img src="/Image2.png" className="rounded-[12px]"></img>
         </div>
       </div>
 
-      <div className="block lg:flex lg:flex-row lg:gap-14 mx-auto max-w-7xl px-6 pb-24 pt-10 sm:pb-32 lg:px-8 lg:py-24">
+      <div className="block lg:flex lg:flex-row lg:gap-14 mx-auto max-w-7xl px-6 pb-24 sm:pb-32 lg:px-8 ">
         <div className="flex-1 grid content-center">
           <img src="./focus.svg" className="py-6"></img>
-          <h3 className="text-[#111827] font-poppins text-4xl font-base leading-normal tracking-tighter">
+          <h3 className="text-[#111827] font-poppins text-3xl font-base leading-tight tracking-tighter">
             <span className="gentlenudge">Focus</span> on the things that truly
             matter.
           </h3>
-          <p className="text-gray-500 font-sans text-lg font-light leading-7 py-4">
+          <p className="text-gray-500 font-sans text-lg font-light leading-7 py-4 lg:w-[30em]">
             Carers, we think your time gold dust! It shouldn't be wasted on
             admin or spending hours opening and organising pill boxes every
             single week. Let us take care of that, and you can focus on things
@@ -162,28 +162,28 @@ export default function Hero() {
             on her medication routines, will really help me connect with her”
           </p>
           <div className="flex gap-4 items-center">
-            <img src="/Avatar2.png"></img>
+            <img src="/helencritten.png"></img>
             <p className="text-gray-700 font-sans text-base font-medium leading-7 py-4">
               Helen Critten
             </p>
           </div>
         </div>
         <div className="flex-1">
-          <img src="/Image.png"></img>
+          <img src="/Image3.png" className="rounded-[12px]"></img>
         </div>
       </div>
 
-      <h3 className="text-[#111827] mx-auto text-center font-poppins text-4xl font-lg leading-loose tracking-tighter">
+      <h3 className="text-[#111827] mx-auto text-center font-poppins text-4xl font-lg leading-loose tracking-tighter lg:pb-6">
         <span className="gentlenudge text-4xl">Reimagining</span> the whole
         system.
       </h3>
-      <p className="mx-auto w-7/12 text-gray-500 font-poppins text-center text-base leading-7 font-extralight">
+      <p className="mx-auto text-gray-500 font-poppins text-center text-xl leading-7 font-thin lg:w-1/2">
         We believe that if it ain’t broke, it still needs improving. Your health
         and well-being deserve the best, not just what’s always been done.
       </p>
 
       <div className="flex flex-col gap-6 lg:grid lg:grid-cols-3 lg:gap-14 mx-auto max-w-7xl px-6 pb-24 pt-10 sm:pb-32 lg:px-8 lg:py-24">
-        <div className="bg-gray-50 flex flex-col p-4 justify-center items-center mydiv relative">
+        <div className="bg-gray-50 flex flex-col p-4 justify-center items-center mydiv relative rounded-lg">
           <svg
             width="72"
             height="72"
@@ -277,7 +277,7 @@ export default function Hero() {
             capacity for each individual use case.
           </p>
         </div>
-        <div className="bg-gray-50 flex flex-col p-4 justify-center items-center mydiv relative">
+        <div className="bg-gray-50 flex flex-col p-4 justify-center items-center mydiv relative rounded-lg">
           <svg
             width="72"
             height="72"
@@ -371,7 +371,7 @@ export default function Hero() {
             the right user is getting their medication.
           </p>
         </div>
-        <div className="bg-gray-50 flex flex-col p-4 justify-center items-center mydiv relative">
+        <div className="bg-gray-50 flex flex-col p-4 justify-center items-center mydiv relative rounded-lg">
           <svg
             width="72"
             height="72"
@@ -465,7 +465,7 @@ export default function Hero() {
             partitions of the device for multiple users.
           </p>
         </div>
-        <div className="bg-gray-50 flex flex-col p-4 justify-center items-center mydiv relative">
+        <div className="bg-gray-50 flex flex-col p-4 justify-center items-center mydiv relative rounded-lg">
           <svg
             width="72"
             height="72"
@@ -559,7 +559,7 @@ export default function Hero() {
             receive ambient notifications, anywhere in your home.
           </p>
         </div>
-        <div className="bg-gray-50 flex flex-col p-4 justify-center items-center mydiv relative">
+        <div className="bg-gray-50 flex flex-col p-4 justify-center items-center mydiv relative rounded-lg">
           <svg
             width="72"
             height="72"
@@ -653,7 +653,7 @@ export default function Hero() {
             reducing the amount of single-use plastic in health journeys.
           </p>
         </div>
-        <div className="bg-gray-50 flex flex-col p-4 justify-center items-center mydiv relative">
+        <div className="bg-gray-50 flex flex-col p-4 justify-center items-center mydiv relative rounded-lg">
           <svg
             width="72"
             height="72"
@@ -763,32 +763,36 @@ export default function Hero() {
         <img src="/Asset+1@4x-8 1.png" className="object-cover w-[90px]"></img>
       </div>
 
-      <div className="flex div-color gap-4 mx-auto max-w-7xl sm:p-14 lg:px-8 lg:my-24 items-center flex-col">
+      <div className="flex div-color gap-4 mx-auto max-w-7xl sm:p-14 lg:px-8 lg:my-24 items-center flex-col relative btmnewsletter rounded-xl lg:w-[66em]">
         <h3 className="text-white font-poppins text-4xl font-base leading-normal tracking-tighter">
           Get notified when we’re launching
         </h3>
-        <p className="text-white font-sans text-lg font-light leading-7 py-4">
+        <p className="text-white font-sans text-lg font-light leading-7 py-4 lg:w-[32em] text-center">
           Interested to learn more, drop your email below and we’ll email you
           with important updates and release information!
         </p>
-        <div className="flex gap-x-2 w-1/3">
-          <form name="contact" method="POST" netlify>
-            <input
-              type="email"
-              name="email"
-              id="email"
-              className="flex-1 rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
-              placeholder="Enter your email"
-              aria-describedby="email-description"
-            />
-            <button type="submit" className={styles.notifybtm}>
-              Notify me
-            </button>
-          </form>
-        </div>
+
+        <form
+          name="contact"
+          method="POST"
+          netlify
+          className="flex gap-x-2 w-2/5"
+        >
+          <input
+            type="email"
+            name="email"
+            id="email"
+            className="flex-1 rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+            placeholder="Enter your email"
+            aria-describedby="email-description"
+          />
+          <button type="submit" className={styles.notifybtm}>
+            Notify me
+          </button>
+        </form>
       </div>
 
-      <div className="flex items-center flex-col">
+      <div className="flex items-center flex-col lg:py-16">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="108"

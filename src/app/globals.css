@@ -22,3 +22,27 @@ body {
   background-size: 100%;
   background-repeat: repeat;
 }
+
+@media only screen and (min-width: 1200px) {
+  .btmnewsletter:before {
+    content: "";
+    position: absolute;
+    background-image: url("/graybox.png");
+    width: 100%;
+    top: -11%;
+    left: -28%;
+    height: 25em;
+    z-index: -1;
+  }
+
+  .btmnewsletter:after {
+    content: "";
+    position: absolute;
+    background-image: url(/DotPatternbottom.png);
+    width: 22em;
+    top: -10%;
+    right: -7%;
+    height: 100%;
+    z-index: -1;
+  }
+}

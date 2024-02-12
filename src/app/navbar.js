@@ -2,7 +2,7 @@ import styles from "./page.module.css";
 
 export default function NavBar() {
   return (
-    <div className="flex flex-row justify-between items-center p-6">
+    <div className="flex flex-row justify-between items-center mx-auto max-w-7xl px-6 pb-24 pt-10 sm:pb-32 lg:flex lg:px-8 lg:py-10">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         width="108"
@@ -36,7 +36,7 @@ export default function NavBar() {
           </linearGradient>
         </defs>
       </svg>{" "}
-      <button className={styles.notify}>Download investor pack</button>
+      <button className={styles.notify}>Download Investor Pack</button>
     </div>
   );
 }
